@@ -1,35 +1,23 @@
-# Ecommerce Analysis
+# E-commerce Data Scraper and Analysis
 
-This project aims to create an analytics dashboard for an e-commerce website, including web scraping, data analysis, and visualization.
+This project is a web scraper for collecting e-commerce data from Amazon using Selenium and Python. It includes the following steps:
+
+1. **Web Scraping**: Using Selenium to scrape product data from multiple pages.
+2. **Data Storage**: Storing the scraped data in an SQL database (SQLite).
+3. **Data Analysis and Visualization**: Retrieving data from the SQL database and performing EDA using pandas, matplotlib, and seaborn.
 
 ## Project Structure
-- `data/`: Folder to store scraped data or database files.
-- `notebooks/`: Jupyter notebooks for EDA and visualization.
-- `scripts/`: Python scripts for scraping and analysis.
-- `tests/`: Test scripts for pytest.
-
-## Setup
-1. Create a virtual environment:
-    ```bash
-    python -m venv ecommerce-analysis-venv
-    source ecommerce-analysis-venv/bin/activate
-    ```
-
-2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## Usage
-- Run the scraping script:
-    ```bash
-    python scripts/scrape_data.py
-    ```
-
-- Run tests:
-    ```bash
-    pytest tests/
-    ```
+ecommerce-analysis/
+│
+├── data/ # Directory for data storage
+│ ├── chromedriver-win64/ # Directory for the downloaded ChromeDriver
+│ ├── chromedriver.exe # ChromeDriver executable
+│ ├── LICENSE.chromedriver # License for ChromeDriver
+├── ecommerce-analysis-venv/ # Virtual environment (not included in the repo)
+├── .gitignore # Git ignore file
+├── README.md # Project documentation
+├── requirements.txt # Python dependencies
+└── web_scraper.py # Main web scraping script
 
 ## License
 [MIT License](LICENSE)

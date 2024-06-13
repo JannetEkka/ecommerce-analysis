@@ -1,6 +1,42 @@
-# .gitignore
-venv/
+# Python
+*.py[cod]
 __pycache__/
-*.pyc
-data/
+*.so
+
+# Environment
+.env
+ecommerce-analysis-venv/
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Database files
 *.sqlite3
+
+# Logs
+*.log
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ChromeDriver
+data/chromedriver-*
+
+# Scraped data
+scraped_data.csv
