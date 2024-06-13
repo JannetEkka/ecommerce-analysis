@@ -97,31 +97,41 @@ except Exception as e:
     print(f"Error initializing WebDriver: {e}")
     exit(1)
 
-# Example URL for an Amazon search result page (replace with the actual URL)
-url = 'https://www.amazon.in/s?k=laptops'
-driver.get(url)
-time.sleep(5)  # Wait for the page to load
+# Function to scrape a page
+def scrape_page(url):
+    driver.get(url)
+    time.sleep(5)  # Wait for the page to load
 
-# Scrape data (example: product names and prices)
-products = driver.find_elements(By.XPATH, '//div[@data-component-type="s-search-result"]')
-data = []
+    products = driver.find_elements(By.XPATH, '//div[@data-component-type="s-search-result"]')
+    data = []
 
-for product in products:
-    try:
-        name = product.find_element(By.XPATH, './/span[@class="a-size-medium a-color-base a-text-normal"]').text
-    except:
-        name = "N/A"
-    try:
-        price = product.find_element(By.XPATH, './/span[@class="a-price-whole"]').text
-    except:
-        price = "N/A"
-    data.append({'name': name, 'price': price})
+    for product in products:
+        try:
+            name = product.find_element(By.XPATH, './/span[@class="a-size-medium a-color-base a-text-normal"]').text
+        except:
+            name = "N/A"
+        try:
+            price = product.find_element(By.XPATH, './/span[@class="a-price-whole"]').text
+        except:
+            price = "N/A"
+        data.append({'name': name, 'price': price})
+
+    return data
+
+# Scrape data from the first page and subsequent 10 pages
+base_url = 'https://www.amazon.in/s?k=laptops'
+all_data = []
+for page in range(1, 11):
+    url = f"{base_url}&page={page}"
+    print(f"Scraping page {page}")
+    page_data = scrape_page(url)
+    all_data.extend(page_data)
 
 # Close the WebDriver
 driver.quit()
 
 # Store data in a pandas DataFrame
-df = pd.DataFrame(data)
+df = pd.DataFrame(all_data)
 print(df)
 
 # Save DataFrame to a CSV file
