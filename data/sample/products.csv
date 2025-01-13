@@ -1,0 +1,101 @@
+product_id,product_name,category,base_price
+ELE_001,Electronics Product 1,Electronics,811.63
+ELE_002,Electronics Product 2,Electronics,1906.36
+ELE_003,Electronics Product 3,Electronics,1490.79
+ELE_004,Electronics Product 4,Electronics,1237.45
+ELE_005,Electronics Product 5,Electronics,396.44
+ELE_006,Electronics Product 6,Electronics,396.39
+ELE_007,Electronics Product 7,Electronics,210.36
+ELE_008,Electronics Product 8,Electronics,1745.73
+ELE_009,Electronics Product 9,Electronics,1242.12
+ELE_010,Electronics Product 10,Electronics,1445.34
+ELE_011,Electronics Product 11,Electronics,139.11
+ELE_012,Electronics Product 12,Electronics,1942.83
+ELE_013,Electronics Product 13,Electronics,1681.64
+ELE_014,Electronics Product 14,Electronics,503.44
+ELE_015,Electronics Product 15,Electronics,445.47
+ELE_016,Electronics Product 16,Electronics,448.47
+ELE_017,Electronics Product 17,Electronics,678.06
+ELE_018,Electronics Product 18,Electronics,1097.04
+ELE_019,Electronics Product 19,Electronics,920.7
+ELE_020,Electronics Product 20,Electronics,653.34
+CLO_001,Clothing Product 1,Clothing,130.13
+CLO_002,Clothing Product 2,Clothing,45.11
+CLO_003,Clothing Product 3,Clothing,72.59
+CLO_004,Clothing Product 4,Clothing,85.95
+CLO_005,Clothing Product 5,Clothing,102.09
+CLO_006,Clothing Product 6,Clothing,161.33
+CLO_007,Clothing Product 7,Clothing,55.94
+CLO_008,Clothing Product 8,Clothing,112.56
+CLO_009,Clothing Product 9,Clothing,126.63
+CLO_010,Clothing Product 10,Clothing,28.36
+CLO_011,Clothing Product 11,Clothing,129.36
+CLO_012,Clothing Product 12,Clothing,50.69
+CLO_013,Clothing Product 13,Clothing,31.71
+CLO_014,Clothing Product 14,Clothing,190.8
+CLO_015,Clothing Product 15,Clothing,193.81
+CLO_016,Clothing Product 16,Clothing,165.51
+CLO_017,Clothing Product 17,Clothing,74.83
+CLO_018,Clothing Product 18,Clothing,37.58
+CLO_019,Clothing Product 19,Clothing,143.16
+CLO_020,Clothing Product 20,Clothing,99.23
+BOO_001,Books Product 1,Books,14.88
+BOO_002,Books Product 2,Books,29.81
+BOO_003,Books Product 3,Books,11.38
+BOO_004,Books Product 4,Books,46.37
+BOO_005,Books Product 5,Books,20.35
+BOO_006,Books Product 6,Books,36.5
+BOO_007,Books Product 7,Books,22.47
+BOO_008,Books Product 8,Books,30.8
+BOO_009,Books Product 9,Books,31.87
+BOO_010,Books Product 10,Books,17.39
+BOO_011,Books Product 11,Books,48.78
+BOO_012,Books Product 12,Books,41.01
+BOO_013,Books Product 13,Books,47.58
+BOO_014,Books Product 14,Books,45.79
+BOO_015,Books Product 15,Books,33.92
+BOO_016,Books Product 16,Books,46.87
+BOO_017,Books Product 17,Books,13.54
+BOO_018,Books Product 18,Books,17.84
+BOO_019,Books Product 19,Books,11.81
+BOO_020,Books Product 20,Books,23.01
+HOM_001,Home & Kitchen Product 1,Home & Kitchen,212.68
+HOM_002,Home & Kitchen Product 2,Home & Kitchen,157.53
+HOM_003,Home & Kitchen Product 3,Home & Kitchen,419.51
+HOM_004,Home & Kitchen Product 4,Home & Kitchen,197.67
+HOM_005,Home & Kitchen Product 5,Home & Kitchen,162.04
+HOM_006,Home & Kitchen Product 6,Home & Kitchen,285.07
+HOM_007,Home & Kitchen Product 7,Home & Kitchen,96.23
+HOM_008,Home & Kitchen Product 8,Home & Kitchen,407.03
+HOM_009,Home & Kitchen Product 9,Home & Kitchen,65.04
+HOM_010,Home & Kitchen Product 10,Home & Kitchen,493.84
+HOM_011,Home & Kitchen Product 11,Home & Kitchen,392.96
+HOM_012,Home & Kitchen Product 12,Home & Kitchen,123.4
+HOM_013,Home & Kitchen Product 13,Home & Kitchen,32.6
+HOM_014,Home & Kitchen Product 14,Home & Kitchen,413.27
+HOM_015,Home & Kitchen Product 15,Home & Kitchen,362.22
+HOM_016,Home & Kitchen Product 16,Home & Kitchen,372.63
+HOM_017,Home & Kitchen Product 17,Home & Kitchen,392.5
+HOM_018,Home & Kitchen Product 18,Home & Kitchen,64.8
+HOM_019,Home & Kitchen Product 19,Home & Kitchen,198.48
+HOM_020,Home & Kitchen Product 20,Home & Kitchen,84.46
+SPO_001,Sports Product 1,Sports,262.35
+SPO_002,Sports Product 2,Sports,196.41
+SPO_003,Sports Product 3,Sports,116.0
+SPO_004,Sports Product 4,Sports,42.48
+SPO_005,Sports Product 5,Sports,110.52
+SPO_006,Sports Product 6,Sports,114.43
+SPO_007,Sports Product 7,Sports,225.64
+SPO_008,Sports Product 8,Sports,200.33
+SPO_009,Sports Product 9,Sports,268.98
+SPO_010,Sports Product 10,Sports,154.86
+SPO_011,Sports Product 11,Sports,57.89
+SPO_012,Sports Product 12,Sports,221.14
+SPO_013,Sports Product 13,Sports,234.22
+SPO_014,Sports Product 14,Sports,179.35
+SPO_015,Sports Product 15,Sports,237.02
+SPO_016,Sports Product 16,Sports,160.79
+SPO_017,Sports Product 17,Sports,168.75
+SPO_018,Sports Product 18,Sports,142.57
+SPO_019,Sports Product 19,Sports,31.99
+SPO_020,Sports Product 20,Sports,54.67

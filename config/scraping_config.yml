@@ -1,0 +1,42 @@
+# Scraping Configuration
+scraping:
+  headless: true
+  timeout: 10
+  retry_attempts: 3
+  delay_between_requests: 2
+
+# Rate Limiting
+rate_limits:
+  requests_per_minute: 20
+  max_concurrent_requests: 5
+
+# Proxy Configuration
+proxies:
+  enabled: false
+  proxy_list: []
+
+# Target Sites Configuration
+target_sites:
+  - name: "example_store"
+    base_url: "https://example.com"
+    selectors:
+      product_title: "h1.product-title"
+      price: "span.price"
+      rating: "div.rating"
+      reviews: "div.reviews"
+    allowed_categories:
+      - "electronics"
+      - "books"
+      - "clothing"
+
+# Database Configuration
+database:
+  type: "sqlite"
+  path: "data/ecommerce.db"
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  file: "logs/scraper.log"
+  max_size: 10485760  # 10MB
+  backup_count: 5
