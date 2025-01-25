@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-commerce Analytics Dashboard">
+    <title>E-commerce Analytics</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tableau JavaScript API -->
+    <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        #root {
+            min-height: 100vh;
+        }
+        
+        /* Loading spinner */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <!-- Loading spinner shown until React loads -->
+        <div class="loading">
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- This is where your React app will mount -->
+    <script type="module" src="/src/index.js"></script>
+
+    <!-- Error handling -->
+    <script>
+        window.onerror = function(message, source, lineno, colno, error) {
+            console.error('Global error:', {message, source, lineno, colno, error});
+            // You could add error reporting service initialization here
+        };
+    </script>
+
+    <!-- Tableau initialization check -->
+    <script>
+        function checkTableauApi() {
+            if (!window.tableau) {
+                console.error('Tableau API not loaded');
+                // You could add a user-friendly error message here
+            }
+        }
+        window.addEventListener('load', checkTableauApi);
+    </script>
+</body>
+</html>

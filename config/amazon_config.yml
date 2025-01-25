@@ -1,0 +1,36 @@
+scraping:
+  headless: false  # Set to false initially for debugging
+  timeout: 15
+  retry_attempts: 3
+  delay_between_requests: 3  # Increased delay for Amazon
+
+rate_limits:
+  requests_per_minute: 10  # Conservative rate limiting
+  max_concurrent_requests: 2
+
+target_sites:
+  - name: "amazon_in"
+    base_url: "https://www.amazon.in"
+    category_url: "/s?rh=n%3A976392031&dc&qid=1736886881&rnid=1375424031"
+    selectors:
+      product_grid: "div[data-component-type='s-search-result']"
+      product_title: "h2 span.a-text-normal"
+      product_price: "span.a-price-whole"
+      product_link: "a.a-link-normal.s-no-outline"
+      rating: "span.a-icon-alt"
+      reviews_count: "span.a-size-base.s-underline-text"
+      next_page: "a.s-pagination-next"
+    product_page_selectors:
+      title: "span#productTitle"
+      price: "span.a-price-whole"
+      availability: "span#availability"
+      features: "div#feature-bullets"
+      technical_details: "div#productDetails_techSpec_section_1"
+      brand: "span.a-size-base.po-brand"
+      model: "span.a-size-base.po-model"
+      rating: "span#acrPopover"
+      reviews_count: "span#acrCustomerReviewText"
+
+logging:
+  level: "INFO"
+  file: "logs/amazon_scraper.log"
